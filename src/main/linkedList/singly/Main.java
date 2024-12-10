@@ -12,6 +12,8 @@ public class Main {
         linkedList.insertAtEnd(100);
         linkedList.insertAtEnd(200);
         linkedList.insertAtEnd(300);
+        linkedList.insertAtEnd(400);
+        linkedList.insertAtEnd(500);
     /*
         linkedList.insertAtPosition(98, 0);
         linkedList.insertAtPosition(300, 1);
@@ -19,5 +21,18 @@ public class Main {
         linkedList.insertAtPosition(80, 5);
     */
         linkedList.printLinkedList(linkedList.head);
+    /*
+        System.out.println();
+        linkedList.deleteFromPosition(3);
+        linkedList.printLinkedList(linkedList.head);
+        System.out.println();
+        linkedList.deleteFromStart();
+        linkedList.printLinkedList(linkedList.head);
+        System.out.println();
+        linkedList.deleteFromEnd();
+        linkedList.printLinkedList(linkedList.head);
+        System.out.println();
+        System.out.println(linkedList.search(300));
+    */
     }
 }
