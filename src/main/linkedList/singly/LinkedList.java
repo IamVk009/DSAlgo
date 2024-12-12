@@ -9,6 +9,7 @@ public class LinkedList {
         Node newNode = new Node(data); // Create a new node with the given data
         newNode.next = head;           // Point the new node's next to the current head
         head = newNode;                // Update head to point to the new node
+//        Time Complexity = O(1) -> Constant Time
     }
 
     /** Insert Node at End of Linked list. */
@@ -25,6 +26,7 @@ public class LinkedList {
         }
 
         tempNode.next = newNode;
+//         Time Complexity = O(n) -> Linear Time
     }
 
     /** Insert Data in a Node at specific position in Linked List. */
@@ -71,6 +73,7 @@ public class LinkedList {
 
         newNode.next = tempNode.next;
         tempNode.next = newNode;
+//        Time Complexity = O(n) -> Linear Time
     }
 
     /** Print all the Nodes of Linked List. */
@@ -89,6 +92,7 @@ public class LinkedList {
             temp = temp.next;
         }
         System.out.print(" ==> null");
+//        Time Complexity = O(n) -> Linear Time
     }
 
     /** Delete first Node from Linked List. */
@@ -98,6 +102,7 @@ public class LinkedList {
             return;
         }
         head = head.next;
+//        Time Complexity = O(1) -> Constant Time
     }
 
     /** Delete last Node from Linked List. */
@@ -118,6 +123,7 @@ public class LinkedList {
             tempNode = tempNode.next;
         }
         tempNode.next = null;
+//        Time Complexity = O(n) -> Linear Time
     }
 
     /** Delete Node at specific position from Linked List. */
@@ -151,6 +157,7 @@ public class LinkedList {
         } else {
             System.out.println("Position out of Bounds..");
         }
+//        Time Complexity = O(n) -> Linear Time
     }
 
     /** Search Node in Linked List. */
@@ -163,5 +170,6 @@ public class LinkedList {
             tempNode = tempNode.next;
         }
         return false;
+//        Time Complexity = O(n) -> Linear Time
     }
 }
