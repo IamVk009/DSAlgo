@@ -17,6 +17,8 @@ public class DoublyLinkedList {
         newNode.next = head;
         head.prev = newNode;
         head = newNode;
+
+        // Time Complexity = O(1) -> Constant Time
     }
 
     /** Insert Node at End of Doubly Linked list. */
@@ -31,6 +33,8 @@ public class DoublyLinkedList {
         tail.next = newNode;
         newNode.prev = tail;
         tail = newNode;
+
+        // Time Complexity = O(1) -> Constant Time
     }
 
     /** Insert Node at specific position in Doubly Linked List. */
@@ -79,6 +83,7 @@ public class DoublyLinkedList {
             }
             tempNode.next = newNode;
         }
+        // Time Complexity = O(n) -> Linear Time
     }
 
     /** Delete first Node from Doubly Linked List. */
@@ -96,6 +101,7 @@ public class DoublyLinkedList {
 
         head = head.next;
         head.prev = null;
+        // Time Complexity = O(1) -> Constant Time
 
     }
 
@@ -114,6 +120,7 @@ public class DoublyLinkedList {
 
         tail = tail.prev;
         tail.next = null;
+        // Time Complexity = O(1) -> Constant Time
     }
 
     /** Delete Node at specific position from Doubly Linked List. */
@@ -166,6 +173,27 @@ public class DoublyLinkedList {
             tempNode.next = nodeToDelete.next;
             nodeToDelete.next.prev = tempNode;
         }
+
+        // Time Complexity = O(n) -> Linear Time
+    }
+
+    /** Search Node in Doubly Linked List. */
+    public boolean search(int data) {
+        if (head == null) {
+            System.out.println("Doubly Linked List is Empty..");
+            return false;
+        }
+
+        Node tempNode = head;
+        while (tempNode != null) {
+            if (tempNode.data == data) {
+                return true;
+            }
+            tempNode = tempNode.next;
+        }
+        return false;
+
+        // Time Complexity = O(n) -> Linear Time
     }
 
     /** Display Doubly Linked List from Head to Tail. */
@@ -179,11 +207,13 @@ public class DoublyLinkedList {
         while (currentNode != null) {
             System.out.print(currentNode.data);
             if (currentNode.next != null) {
-                System.out.print(" => ");
+                System.out.print(" <=> ");
             }
             currentNode = currentNode.next;
         }
         System.out.println();
+
+        // Time Complexity = O(n) -> Linear Time
     }
 
     /** Display Doubly Linked List from Tail to Head. */
@@ -197,11 +227,13 @@ public class DoublyLinkedList {
         while (currentNode != null) {
             System.out.print(currentNode.data);
             if (currentNode.prev != null) {
-                System.out.print(" <= ");
+                System.out.print(" <=> ");
             }
             currentNode = currentNode.prev;
         }
         System.out.println();
+
+        // Time Complexity = O(n) -> Linear Time
     }
 
 }

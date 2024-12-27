@@ -10,6 +10,7 @@ public class Main {
         doublyLinkedList.insertAtBeginning(50);
         doublyLinkedList.displayForward();
         doublyLinkedList.displayBackwards();
+        System.out.println(doublyLinkedList.search(10));
     /*
         doublyLinkedList.insertAtBeginning(100);
         doublyLinkedList.displayForward();
