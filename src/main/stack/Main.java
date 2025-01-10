@@ -5,6 +5,7 @@ public class Main {
         Stack stack = new Stack(4);
         stack.push(30);
         stack.push(40);
+        stack.pop();
         stack.displayElement();
     }
 }
