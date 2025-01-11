@@ -34,6 +34,16 @@ public class Stack {
         }
     }
 
+    // Peek Operation
+    public int peek() {
+        if (top == -1) {
+            System.out.println("Stack is Empty..");
+            return -1;
+        } else {
+            return array[top];
+        }
+    }
+
     // Display
     public void displayElement() {
         if (top == -1) {
