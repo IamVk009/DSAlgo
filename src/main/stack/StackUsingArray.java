@@ -1,11 +1,11 @@
 package main.stack;
 
-public class Stack {
+public class StackUsingArray {
     private int[] array;
     private int maxSize;
     private int top = 0;
 
-    public Stack(int size) {
+    public StackUsingArray(int size) {
         this.maxSize = size;
         array = new int[maxSize];
         top = -1;
@@ -15,7 +15,6 @@ public class Stack {
     public void push(int data) {
         if (top == maxSize - 1) {
             System.out.println("Stack is Full!");
-            return;
         } else {
             top++;
             array[top] = data;
