@@ -19,4 +19,15 @@ public class StackUsingLinkedList {
         top = node;
     }
 
+    public int pop() {
+        if (top == null) {
+            System.out.println("Stack is Empty");
+            return -1;
+        }
+
+        int value = top.data;
+        top = top.next;
+        return value;
+    }
+
 }
