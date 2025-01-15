@@ -30,4 +30,12 @@ public class StackUsingLinkedList {
         return value;
     }
 
+    public int peek() {
+        if (top == null) {
+            System.out.println("Stack is Empty");
+            return -1;
+        }
+        return top.data;
+    }
+
 }
